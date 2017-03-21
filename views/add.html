@@ -1,0 +1,19 @@
+<div class="addForm">
+    <form enctype="multipart/form-data" action="add.php" method="post">
+        <div class="leftCol">
+            <b>Заголовок статьи:</b>
+            <b id="recText">Текст статьи:</b>
+            <b>Хеш-тег:</b>
+            <b>Загрузить картинку:</b>
+        </div>
+
+        <div class="rightCol">
+            <input type="text" name="title" value="<?=$title?>">
+            <textarea rows="10" cols="45" name="record"><?=$text?></textarea>
+            <input type="text" name="tag" value="<?=$tags?>">
+            <input type="file" name="img" accept="image/jpeg,image/png,image/gif">
+            <input class="button" type="submit" name="add" value="Добавить">
+        </div>
+
+    </form>
+</div>

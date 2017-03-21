@@ -1,0 +1,19 @@
+<div class="logoutPanel">
+    <div class="text">
+        <b>Hello</b>
+        <b id="userName"><?=$_SESSION['login']?></b>
+        <b>(<?=$_SESSION['roleName']?>)</b>
+    </div>
+    <div class="lcLogout">
+        <div class="lcol">
+
+            <a class="menuButton" href="lobby.php">Личный кабинет</a>
+            <a class="menuButton" href="add.php">Добавление</a>
+        </div>
+        <div class="rcol">
+            <form action="logout.php" method="post">
+                <input class="logoutButton" name="submit" type="submit" value="Выход">
+            </form>
+        </div>
+    </div>
+</div>

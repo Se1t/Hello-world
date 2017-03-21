@@ -1,0 +1,19 @@
+<div class="addForm">
+    <form action="edit.php?id=<?=$oldData[0]?>" method="post">
+        <div class="leftCol">
+            <b>Заголовок статьи:</b>
+            <b id="recText">Текст статьи:</b>
+            <b>Хеш-тег:</b>
+            <b>Загрузить картинку:</b>
+        </div>
+
+        <div class="rightCol">
+            <input type="text" name="title" value="<?=$oldData[2]?>">
+            <textarea rows="10" cols="45" name="record"><?=$oldData[3]?></textarea>
+            <input type="text" name="tag" value="<?=$htags?>">
+            <input type="file" name="img" accept="image/jpeg,image/png,image/gif" value="<?=$oldData[3]?>">
+            <input class="button" type="submit" name="edit" value="Редактировать">
+        </div>
+
+    </form>
+</div>
