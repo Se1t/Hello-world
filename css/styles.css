@@ -1,0 +1,755 @@
+@font-face {
+    font-family: Exo2;
+    src: local("Exo2");
+    src: url(../fonts/Exo2-Regular.ttf);
+}
+
+body{
+    font-family: Exo2;
+}
+
+header {
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto 0 auto;
+    display: table;
+    background-color: gainsboro;
+
+}
+
+.navigation {
+    min-width: 460px;
+    display: inline-flex;
+    vertical-align: middle;
+    float: right;
+    padding: 45px 0 0 0;
+}
+
+.menuButton{
+    height: 30px;
+    min-width: 100px;
+    float: left;
+    background-color: dimgray;
+    text-align: center;
+    color: gainsboro;
+    line-height: 30px;
+    padding: 5px;
+    margin: 0 10px 0 0;
+    border-radius: 7px;
+    border: 1px solid gainsboro;
+
+}
+
+.menuButton:link{
+    text-decoration: none;
+}
+
+.menuButton:visited{
+    text-decoration: none;
+}
+
+.menuButton:active {
+    text-decoration: none;
+}
+
+.menuButton:hover {
+    text-decoration: none;
+    border: 1px solid dimgray;
+    background-color: ghostwhite;
+    color: dimgray;
+}
+
+.pressedButton{
+    border: 1px solid dimgray;
+    background-color: ghostwhite;
+    color: dimgray;
+}
+
+.nav_elem {
+    height: 30px;
+    width: 100px;
+    float: left;
+}
+
+.logo {
+    vertical-align: middle;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 25px 0 0 65px;
+    color: dimgray;
+    display: inline-flex;
+}
+
+.logo2 {
+    vertical-align: middle;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 25px 0 0 0;
+    display: inline-flex;
+    color: #53518c;
+}
+
+.content {
+    width: 1000px;
+    min-width: 600px;
+    min-height: 1000px;
+    height: auto;
+    background-color: gainsboro;
+    margin: 0 auto 0 auto;
+    padding: 25px 0 50px 0;
+}
+
+footer {
+    width: 1000px;
+    height: 50px;
+    background-color: dimgray;
+    margin: 0 auto 0 auto;
+    display: table;
+}
+
+#add_form {
+    width: 400px;
+    height: auto;
+    margin:  0 auto 0 auto;
+    display: table;
+    padding: 15px;
+
+}
+
+.add_form{
+    height: auto;
+    width: auto;
+    display: table-row;
+    list-style-type: none;
+
+}
+
+.add_form>input{
+    float: right;
+    margin: 0 0 15px 0;
+}
+
+.add_form>textarea{
+    float: right;
+    margin: 0 0 15px 0;
+
+}
+
+.add_form>select{
+    margin: 0 0 35px 5px;
+
+}
+
+input[name="title"]{
+    width: 300px;
+
+}
+
+textarea[name="comment"]{
+    width: 300px;
+    height: 250px;
+    resize: none;
+
+
+}
+
+
+.blog_rec{
+    width: 800px;
+    min-height: 270px;
+    margin: 0 auto 10px auto;
+    background-color: whitesmoke;
+    padding: 5px;
+    box-shadow: 0px 0px 10px 0px black;
+    display: table;
+
+}
+
+.blog_text{
+    min-height: 95px;
+    display: flex;
+
+}
+
+.blog_text>img{
+    float: left;
+    margin: 3px 8px 2px 0;
+    max-height: 225px;
+    max-width: 400px;
+}
+
+.footer_text{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: gainsboro;
+}
+
+
+
+
+
+.addForm{
+    margin: 50px auto 0 auto;
+    width: 420px;
+    height: 300px;
+    display: flex;
+
+}
+
+.rightCol>textarea{
+    width: 248px;
+    float: right;
+    margin: 0 0 20px 0;
+}
+
+.rightCol>input{
+    float: right;
+    width: 250px;
+    margin: 0 0 10px 0;
+}
+
+.rightCol>.button{
+     float: right;
+     margin: 0 0 20px 0;
+     height: 30px;
+     min-width: 100px;
+     background-color: dimgray;
+     text-align: center;
+     color: gainsboro;
+     border-radius: 4px;
+     border: 1px solid dimgray;
+    font-family: Exo2;
+ }
+
+.rightCol>.button:hover{
+    text-decoration: none;
+    border: 1px solid dimgray;
+    background-color: ghostwhite;
+    color: dimgray;
+}
+
+.leftCol>#recText{
+
+    margin: 0 0 165px 0;
+}
+
+.addForm>form{
+    display: flex;
+
+}
+
+.addForm b{
+    float: left;
+    margin: 0 0 10px 0;
+}
+
+.leftCol{
+    width: 160px;
+    float: left;
+
+}
+
+.rightCol{
+    width: 250px;
+    float: right;
+
+}
+
+.editForm{
+    margin: 30px auto 0 auto;
+    width: 280px;
+    height: 70px;
+    display: table;
+
+}
+.editForm input{
+    float: right;
+    width: 175px;
+    display: table-cell;
+}
+
+.editForm b{
+    float: left;
+}
+
+.message{
+    width: 500px;
+    min-height: 120px;
+    margin: 10px auto 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.author{
+    float: left;
+    display: flex;
+}
+
+.time{
+    float: right;
+    display: flex;
+}
+
+#add{
+    float: left;
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+#del{
+    float: left;
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+#edit{
+    float: right;
+    display: inline-block;
+}
+
+#message{
+    display: block;
+    margin: 30px;
+    padding: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.mainPageAddLink{
+    width: 500px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    display: flex;
+}
+
+.log{
+    width: 500px;
+    min-height: 30px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+}
+
+#mainLink{
+    float: right;
+}
+
+.blog_title{
+    margin: 10px 0 10px 20px;
+}
+
+.rec_footer{
+    min-height: 25px;
+    margin: 10px 0 0 0;
+
+}
+
+.rec_footer2{
+    min-height: 25px;
+    width: 400px;
+    margin: 10px 0 0 0;
+    float: left;
+
+}
+
+.rec_footer2>a{
+    height: 23px;
+    width: 150px;
+    float: left;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.rec_footer2>a:hover{
+    font-weight: bold;
+}
+
+.rec_footer2>.likes{
+    float: right;
+}
+
+.htags{
+    min-height: 25px;
+    margin: 10px 0 0 0;
+}
+
+.htags>a{
+    text-decoration: none;
+    color: black;
+    padding: 0 5px 0 0;
+    min-height: 23px;
+}
+
+.htags>a:hover{
+    font-weight: bold;
+}
+
+.rec_menu{
+    display: flex;
+    min-height: 40px;
+    float: right;
+}
+
+.logoutPanel{
+    width: 1000px;
+    height: 115px;
+    margin: 0 auto 0 auto;
+    background-color: gainsboro;
+}
+
+.logoutPanel>form{
+    float: right;
+    margin: 0 15px 0 0;
+}
+
+.loginPanel{
+    width: 1000px;
+    height: 115px;
+    margin: 0 auto 0 auto;
+    background-color: gainsboro;
+}
+
+.loginPanel>form{
+    float: right;
+
+}
+
+.dontRem{
+    width: 148px;
+    height: 25px;
+    float: right;
+    display: flex;
+    font-weight: bold;
+    margin: 7px 0 0 0;
+}
+
+.loginButton{
+    text-decoration: none;
+    height: 43px;
+    width: 77px;
+    float: left;
+    background-color: dimgray;
+    text-align: center;
+    color: gainsboro;
+    line-height: 30px;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 7px;
+    border: 1px solid gainsboro;
+    font-size: 16px;
+    font-family: Exo2;
+
+}
+
+.loginButton:hover {
+    text-decoration: none;
+    background-color: ghostwhite;
+    border: 1px solid dimgray;
+    color: dimgray;
+}
+
+.logoutButton {
+    text-decoration: none;
+    height: 42px;
+    width: 100px;
+    float: left;
+    background-color: dimgray;
+    text-align: center;
+    color: gainsboro;
+    line-height: 30px;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 7px;
+    border: 1px solid dimgray;
+    font-size: 16px;
+}
+
+.logoutButton:hover {
+    text-decoration: none;
+    border: 1px solid dimgray;
+    background-color: ghostwhite;
+    color: dimgray;
+}
+
+#loginField{
+    width: 220px;
+    height: 40px;
+    float: left;
+    margin: 0 15px 15px 0;
+    border: 1px solid gainsboro;
+    padding: 0 0 0 5px;
+    border-left: none;
+}
+
+#passField{
+    width: 125px;
+    height: 40px;
+    float: left;
+    margin: 0 15px 15px 0;
+    border: 1px solid gainsboro;
+    padding: 0 0 0 5px;
+    border-left: none;
+}
+
+.lcol{
+    width: 312px;
+    height: 110px;
+    display: flex;
+    float: left;
+
+}
+
+.lcolB{
+    float: left;
+    margin: 9px 0 0 0;
+}
+
+.rcol{
+    width: 152px;
+    height: 110px;
+    float: right;
+}
+
+.rcol>a{
+    text-decoration: none;
+    color: whitesmoke;
+    float: right;
+    margin: 0 0 18px 0;
+    height: 28px;
+    width: 130px;
+}
+
+.rcol>b{
+    float: left;
+}
+
+
+#checkbox{
+    height: 15px;
+    width: 20px;
+    float: right;
+    margin: 12px 0 0 20px;
+}
+
+.lcLogin{
+    float: right;
+    margin: 0 90px 0 0;
+}
+
+.lcLogout{
+    width: 430px;
+    height: 95px;
+    float: right;
+    display: flex;
+    margin: 0 40px 0 0;
+}
+
+.lcLogout>.rcol>form{
+    width: 150px;
+    height: 95px;
+    float: right;
+    display: flex;
+    margin: 30px 60px 0 20px;
+}
+
+
+.lcLogout>.rcol{
+    display: flex;
+
+}
+
+.lcLogout>.lcol{
+    width: 370px;
+}
+
+.lcLogout>.lcol>b{
+    float: left;
+    margin: 8px 10px 0 0;
+    font-size: 16px;
+}
+
+.lcLogout>.lcol>.menuButton{
+    float: left;
+    margin: 30px 10px 0 0;
+}
+
+
+.text {
+    height: 50px;
+    width: 120px;
+    margin: 25px 20px 0 39%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+    color: dimgray;
+}
+
+b#userName{
+    font-weight: bold;
+    font-size: 21px;
+    color: #644e90;
+}
+
+
+.lcLogout>input{
+    float: right;
+    height: 42px;
+    margin: 30px 10px 0 0;
+    font-size: 16px;
+    min-width: 127px;
+}
+
+.registrationForm{
+    height: 200px;
+    width: 300px;
+    margin: 50px auto 0 auto;
+
+}
+
+.registrationForm>input{
+    float: right; !important;
+    font-family: Exo2;
+}
+
+.registrationForm>.button{
+    height: 40px;
+    min-width: 100px;
+    float: right;
+    background-color: dimgray;
+    text-align: center;
+    color: gainsboro;
+    line-height: 30px;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 7px;
+    border: 1px solid gainsboro;
+}
+
+.registrationForm>.button:hover{
+    background-color: ghostwhite;
+    color: dimgray;
+    text-decoration: none;
+    border: 1px solid dimgray;
+}
+
+
+.registrationForm>b{
+    float: left;
+}
+
+.addComment{
+    margin: 30px auto 0 auto;
+    width: 400px;
+    min-height: 180px;
+    display: flex;
+
+}
+
+.addComment>form>input{
+    float: right;
+    margin: 10px 0 0 0;
+    height: 40px;
+    min-width: 150px;
+    background-color: dimgray;
+    text-align: center;
+    color: gainsboro;
+    line-height: 30px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid dimgray;
+    text-decoration: none;
+}
+
+.addComment>form>input:hover{
+    text-decoration: none;
+    border: 1px solid dimgray;
+    background-color: ghostwhite;
+    color: dimgray;
+}
+
+
+.addComment>form>textarea{
+    float: right;
+    width: 398px;
+    height: 180px;
+}
+
+.commentRec{
+    width: 400px;
+    min-height: 180px;
+    margin: 25px auto 10px auto;
+    background-color: whitesmoke;
+    padding: 5px;
+    box-shadow: 0px 0px 10px 0px black;
+
+}
+
+.blogerList{
+    margin: 0 auto 0 auto;
+    width: 215px;
+    line-height: 20px;
+}
+
+.blogerList>a{
+    width: 150px;
+    height: 25px;
+    text-decoration: none;
+    color: gainsboro;
+    background-color: dimgray;
+    border-radius: 7px;
+    border: 1px solid dimgray;
+    display: flex;
+    padding: 5px 0 0 60px;
+}
+
+.blogerList>a:hover{
+    text-decoration: none;
+    color: dimgray;
+    background-color: ghostwhite;
+    border-radius: 7px;
+    border: 1px solid dimgray;
+
+}
+
+.buttonMore{
+    width: 300px;
+    height: 40px;
+    margin: 150px auto -40px auto;
+}
+
+.showMoreButton{
+    width: 298px;
+    height: 38px;
+    text-decoration: none;
+    color: gainsboro;
+    background-color: dimgray;
+    border-radius: 7px;
+    border: 1px solid dimgray;
+}
+
+.showMoreButton:hover{
+    color: dimgray;
+    background-color: ghostwhite;
+    border: 1px solid dimgray;
+}
+
+.noMoreRec{
+    width: 300px;
+    height: 40px;
+    margin: 0px auto -50px auto;
+    text-align: center;
+    font-family: Exo2;
+    font-weight: bold;
+}
+
+.loading{
+    width: 100px;
+    height: 50px;
+    margin: 50px auto -100px;
+    position: relative;
+}
+
